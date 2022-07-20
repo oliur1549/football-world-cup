@@ -73,8 +73,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    width: 312px;
-    height: 362px;
+    /* width: 312px;
+    height: 362px; */
 }
 
 .match {
@@ -146,6 +146,7 @@ body {
 .live-matches {
     display: flex;
     margin-top: 130px;
+    margin-bottom: 130px;
     gap: 24px;
 }
 
@@ -158,10 +159,11 @@ body {
 
 .menu-bar {
     display: grid;
-    position: absolute;
+    grid-template-rows: repeat(2, 1fr);
     width: 252px;
     height: 252px;
     margin: 30px;
+
 
 }
 
@@ -169,9 +171,339 @@ body {
     width: 252px;
     height: 64px;
     border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #161616;
 }
 
 #blog-btn {
 
     background: #DD0000;
+}
+
+
+/* ------------------------
+     footer part
+------------------------- */
+.foot {
+    margin-top: 50px;
+}
+
+footer {
+    position: absolute;
+    width: 1600px;
+    height: 444px;
+    background: #161616;
+}
+
+
+
+.footer {
+    margin-top: 0;
+}
+
+footer h2 {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 130px;
+}
+
+footer hr {
+    width: 1320px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+}
+
+.footer-link {
+    color: #B9B9B9;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.footer-link span {
+    margin-left: 50px;
+
+}
+
+
+/*-------------------
+ upcoming matches
+------------------- */
+
+.up-matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.match-schedule {
+    width: 312px;
+    height: 242px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.up-match {
+    width: 252px;
+    height: 136.18px;
+    margin: 53px 30px;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.flag-1 {
+    width: 93.04px;
+    height: 56.18px;
+}
+
+.flag-2 {
+    width: 93.04px;
+    height: 54.42px;
+}
+
+.flags span {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 20px;
+    color: #161616;
+}
+
+.up-match h5 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.up-match p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #4D4D4D;
+    margin-top: 10px;
+}
+
+
+/* button
+---------- */
+
+button:hover {
+    background-color: #DD0000;
+}
+.view{
+    display: flex;
+    justify-content: center;
+}
+.view button{
+    position: relative;
+    width: 131px;
+    height: 47px;
+    background: #DD0000;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+/* ---------------------
+Responsive website
+------------------------ */
+/* ---------------------
+Mobile Device
+------------------------ */
+
+@media screen and (max-width:576px) {}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    /* bnnar */
+    .banner-part {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+        width: 734px;
+        height: 398px;
+        background: #161616;
+        border-radius: 30px;
+
+    }
+
+    .banner-text {
+        margin-top: 61px;
+        margin-left: 76px;
+    }
+
+    .banner-text h1 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #FFFFFF;
+        line-height: 50px;
+        margin-bottom: 20px;
+        width: 289px;
+        height: 150px;
+    }
+
+    .banner-text p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 0;
+        width: 316px;
+        height: 48px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .banner-text button {
+        padding: 10px 20px;
+        background: #DD0000;
+        border-radius: 5px;
+        border: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+
+    .banner-text button span {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
+
+    #bnnr-image {
+        width: 323px;
+        height: 340px;
+        margin-top: 58px;
+        margin-right: 17px;
+    }
+
+
+    /* Menu bar */
+
+    .live-matches {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        margin: 0;
+        height: 0;
+        width: 0;
+    }
+
+    .menu {
+        height: 0;
+        width: 0;
+        margin: 0;
+
+    }
+
+    .menu-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        height: 0;
+        width: 0;
+        margin: 0;
+
+    }
+
+    .menu-bar button {
+        width: 230px;
+        height: 64px;
+        font-size: 20px;
+        margin: 70px 0 30px 0;
+    }
+
+    /* matches */
+
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    .match {
+        width: 357px;
+        height: 414.21px;
+    }
+
+    .match img {
+        width: 357px;
+        height: 200.24px;
+    }
+
+    .match p {
+        width: 311.23px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .icon-1 img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-2 img {
+        width: 24px;
+        height: 24px;
+        margin-left: 20px;
+    }
+
+
+
+    /* footer */
+    .foot {
+        margin-top: 1450px;
+    }
+
+    footer {
+        width: 834px;
+        height: 345px;
+    }
+    footer h2 {
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 70px;
+    }
+    
+    footer hr {
+        width: 1320px;
+        height: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 30px;
+    }
+    
+    .footer-link {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        color: #B9B9B9;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 30px;
+    
+    }
+    
+    .footer-link span {
+        margin-left: 50px;
+    
+    }
 }
